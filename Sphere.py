@@ -130,17 +130,17 @@ def callGenerator(arg = None):
     print("printing points...")
     for point in points:
         index += 1
-        addPosition(routine, moveType, str(index), point[0], point[1], point[2], addMesCall)
+        addPosition(routine, moveType, str(index), point[0], point[1], point[2], addMesCall, rx, ry, rz)
 
     all_props = None
     app.render()
     print 'Done.'
 
-def addPosition(routine, moveType, name, x, y, z, addMesCall):
+def addPosition(routine, moveType, name, x, y, z, addMesCall, rx, ry, rz):
     speed = cmd.getProperty('Speed').Value
-    rx = 0
-    ry = 180
-    rz = 0
+    # rx = 0
+    # ry = 180
+    # rz = 0
 
     m = vcMatrix.new()
     m.translateAbs(x, y, z)

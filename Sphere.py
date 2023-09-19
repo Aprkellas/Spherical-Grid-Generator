@@ -44,6 +44,10 @@ def createProperties():
     createProperty(VC_REAL, 'Z Cutoff', None, None)
     createProperty(VC_REAL, 'Void Radius', None, None)
 
+    createProperty(VC_REAL, 'Rx', None, None)
+    createProperty(VC_REAL, 'Ry', None, None)
+    createProperty(VC_REAL, 'Rz', None, None)
+
     createProperty(VC_REAL, 'Speed', None, None)
     createRestrainedProperty(VC_STRING, 'Move Type', 'Linear', ['Linear', 'Joint'])
 
@@ -110,6 +114,10 @@ def callGenerator(arg = None):
     x_spacing = cmd.getProperty('Point Spacing X').Value
     y_spacing = cmd.getProperty('Point Spacing Y').Value
     z_spacing = cmd.getProperty('Point Spacing Z').Value
+
+    rx = cmd.getProperty('Rx').Value
+    ry = cmd.getProperty('Ry').Value
+    rz = cmd.getProperty('Rz').Value
 
     z_cutoff = cmd.getProperty('Z Cutoff').Value
 

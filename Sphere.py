@@ -1,4 +1,4 @@
-# Tool and Base Generator V0.1
+# Spherical Grid Generator v1.0
 
 from warnings import catch_warnings
 from vcCommand import *

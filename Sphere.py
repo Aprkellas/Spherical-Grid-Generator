@@ -13,7 +13,7 @@ cmd.Name = "ToolAndBase"
 def OnStart():
     global program
 
-    program = getProgram() #
+    program = getProgram() 
     if not program:
         app.messageBox("No program selected, aborting.","Warning",VC_MESSAGE_TYPE_WARNING,VC_MESSAGE_BUTTONS_OK)
         return
@@ -138,9 +138,6 @@ def callGenerator(arg = None):
 
 def addPosition(routine, moveType, name, x, y, z, addMesCall, rx, ry, rz):
     speed = cmd.getProperty('Speed').Value
-    # rx = 0
-    # ry = 180
-    # rz = 0
 
     m = vcMatrix.new()
     m.translateAbs(x, y, z)
@@ -171,7 +168,7 @@ def addPosition(routine, moveType, name, x, y, z, addMesCall, rx, ry, rz):
 def GeneratePointGrid(sphere_radius, x_spacing, y_spacing, z_spacing, z_cutoff, void_radius):
     points = []
     
-    x, y, z = -sphere_radius, -sphere_radius, -sphere_radius
+    x, y, z = sphere_radius, sphere_radius, - sphere_radius
     
     while x <= sphere_radius:
         while y <= sphere_radius:

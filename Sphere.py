@@ -8,7 +8,7 @@ import math
 
 app = getApplication()
 cmd = getCommand()  
-cmd.Name = "ToolAndBase"
+cmd.Name = "Sphere"
 
 def OnStart():
     global program

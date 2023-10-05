@@ -2,7 +2,7 @@
 
 This plugin for Visual Components lets the user determine the size and density of a spherical grid.
 It is designed to test the volumetric accuracy of a metrology system through the whole working volume
-of a robot cell. Using Visual components this can be done with any robot manufacturer the program has access 
+of a robot cell. Using Visual Components this can be done with any robot manufacturer the program has access 
 to.
 
 User Inputs explained
@@ -13,3 +13,5 @@ Void Radius: Does not generate points in this area e.g. close to the robot
 Rx, Ry, Rz: Rotation on the points
 Speed: Robot speed
 Linear/Joint: Points will be linear or joint moves.
+
+To use - put this file into your My Commands folder held in your Visual Components folder.
